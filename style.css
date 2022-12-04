@@ -1,0 +1,114 @@
+*{  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+}
+:root{
+    --fontSans: "Work Sans", sans-serif;
+    --colorWhite: #ffffff;}
+.buttons a{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 24px;
+        background-color: #2094E6;
+        color: var(--colorWhite);
+        font-size: 16px;
+        font-family: var(--fontSans);
+        text-decoration: none;}
+
+.Header1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+   z-index: 4;   
+}
+header.Header1 .logo img:hover{
+    background-color: beige;
+    opacity: 40%;
+}
+ header.Header1 .rightS nav{
+    margin-right: 82px;
+ }
+
+.rightS{
+    display: flex;
+    align-items: center;
+}
+header.Header1 .rightS nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;}
+
+header.Header1 .rightS nav ul li a{
+    font-size: 24px;
+    color: var(--colorWhite);
+    font-weight: 500;
+    font-family: var(--fontSans);
+    text-decoration: none;}
+
+ header.Header1 .rightS nav ul li:hover{
+    background-color: rgb(207, 197, 197);
+    opacity: 40%;
+    }
+ header.Header1 .buttons a:hover{
+    background-color: rgb(207, 197, 197);
+    opacity: 40%;
+ }
+section.hero{
+    display: flex;
+    align-items: center;
+    min-height: 660px;
+}
+section.hero::before{
+    content:" ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.3);
+    z-index: 1;
+}
+ section.hero figure{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+}
+section.hero figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}  
+section.hero .MainContent{
+    max-width: 592px;
+    margin: 150px 0 100px 120px;
+    color: var(--colorWhite); 
+}
+section.hero .MainContent h1{
+    font-size: 60px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
+    margin-bottom: 24px;
+    line-height: 66px;
+}
+section.hero .MainContent text{
+    font-size: 18px;
+    font-family: var(--fontSans);
+    margin-bottom: 24px;
+    line-height: 27px;
+}
+section.hero .buttons a:hover{
+    background-color: rgb(207, 197, 197);
+    opacity: 40%;
+}
