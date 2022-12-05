@@ -94,6 +94,7 @@ section.hero .MainContent{
     max-width: 592px;
     margin: 150px 0 100px 120px;
     color: var(--colorWhite); 
+    z-index: 1;
 }
 section.hero .MainContent h1{
     font-size: 60px;
