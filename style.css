@@ -176,6 +176,7 @@ section.hero .buttons a:hover{
     padding-top: 150px;
     display: flex;
     width: 100%;
+    gap: 80px;
 }
 
 .images{
@@ -199,13 +200,16 @@ section.hero .buttons a:hover{
     position: absolute;
     left: 250px;
     top: 283px;
+ 
 }
 
 .text_about_us{
-    width: auto;
-    position:absolute;
-    right: 608px;
-    top: 208px;
+    width: 460px;
+    height: 0 auto;
+   display: flex;
+   flex-direction: column;
+    padding-top: 120px;
+
 }
 .h5{
     color: #2094E6;
