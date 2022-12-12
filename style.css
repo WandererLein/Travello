@@ -5,6 +5,7 @@
 }
 :root{
     --fontSans: "Work Sans", sans-serif;
+    --fontDisplay: "Playfair Displya", sans-serif;
     --colorWhite: #ffffff;}
 .buttons a{
         display: inline-flex;
@@ -15,7 +16,15 @@
         color: var(--colorWhite);
         font-size: 16px;
         font-family: var(--fontSans);
-        text-decoration: none;}
+        text-decoration: none;
+    }
+        @media(max-width: 1024px){
+            .buttons a{
+                font-size: 14px;
+                background-color: #2279b8;
+                padding: 4px 12px;
+            }
+        }
 
 .Header1{
     display: flex;
@@ -29,9 +38,21 @@
     border-bottom: 1px solid rgba(255,255,255, 0.2);
    z-index: 4;   
 }
+@media(max-width: 1024px){
+    .Header1{
+        padding: 10px;
+    }
+}
 header.Header1 .logo img:hover{
     background-color: beige;
     opacity: 40%;
+}
+@media(max-width: 1024px){
+    .header.Header1 .logo{
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    }
 }
  header.Header1 .rightS nav{
     margin-right: 82px;
@@ -41,12 +62,18 @@ header.Header1 .logo img:hover{
     display: flex;
     align-items: center;
 }
+
 header.Header1 .rightS nav ul{
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;}
-
+    gap: 50px;
+}
+@media(max-width: 1024px){
+    header.Header1 .rightS nav {
+        display: none;
+    }
+}
 header.Header1 .rightS nav ul li a{
     font-size: 24px;
     color: var(--colorWhite);
@@ -67,6 +94,13 @@ section.hero{
     align-items: center;
     min-height: 660px;
 }
+@media(max-width: 1024px){
+    .section.hero{
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+}
+
 section.hero::before{
     content:" ";
     display: block;
@@ -79,12 +113,13 @@ section.hero::before{
     z-index: 1;
 }
  section.hero figure{
-  position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;  
 }
+
 section.hero figure img{
     height: 100%;
     width: 100%;
@@ -92,10 +127,16 @@ section.hero figure img{
 }  
 section.hero .MainContent{
     max-width: 592px;
-    margin: 150px 0 100px 120px;
     color: var(--colorWhite); 
     z-index: 1;
+    margin-left: 120px;
 }
+@media(max-width: 1024px){
+    section.hero .MainContent{
+        margin-left: 10px;
+    }
+}
+
 section.hero .MainContent h1{
     font-size: 60px;
     font-family: "Playfair Display", sans-serif;
@@ -103,13 +144,91 @@ section.hero .MainContent h1{
     margin-bottom: 24px;
     line-height: 66px;
 }
-section.hero .MainContent text{
+@media(max-width: 1024px){
+    section.hero .MainContent h1{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        line-height: 33px;
+    }
+
+}
+section.hero.MainContent text{
     font-size: 18px;
     font-family: var(--fontSans);
     margin-bottom: 24px;
     line-height: 27px;
 }
+@media(max-width: 1024px){
+.section.hero.MainContent text{
+   margin-bottom: 30px;
+}
+}
+section.hero .buttons{
+    padding-top: 24px;
+}
 section.hero .buttons a:hover{
+    background-color: rgb(207, 197, 197);
+    opacity: 40%;
+}
+
+.About_us{
+    padding-top: 150px;
+    display: flex;
+    width: 100%;
+}
+
+.images{
+    position: relative;
+    left: 120px;
+    width: 700px;
+    gap: 50px;
+}
+
+#image2{
+    width: 557px;
+    height: 405px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid rgb(207, 197, 197);
+    border-top: none;
+}
+
+#image3{
+    width: 386px;
+    height: 263px;
+    position: absolute;
+    left: 250px;
+    top: 283px;
+}
+
+.text_about_us{
+    width: auto;
+    position:absolute;
+    right: 608px;
+    top: 208px;
+}
+.h5{
+    color: #2094E6;
+    font-family: var(--fontDisplay);
+    font-weight: 500;
+    font-size: 18px;
+    bottom: 15px;
+
+}
+.about_us_h2{
+    font-family: var(--fontDisplay);
+    font-weight: 500;
+    font-size: 45px;
+    bottom: 15px;
+}
+.about_us_p{
+    font-family: var(--fontSans);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    bottom: 15px;
+}
+section.About_us .buttons a:hover{
     background-color: rgb(207, 197, 197);
     opacity: 40%;
 }
